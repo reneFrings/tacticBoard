@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Fussball Taktik Tafel - Zeige deine Aufstellung, Formation und Taktik.</title>
+        <meta name="description" content="Eigenes Vereinslogo, Spieler- und Mannschaftsnamen eingeben. Spieler verschieben, um Taktiken und Spielzüge zu zeigen.">
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+		<meta name="robots" content="noindex,follow,noydir">
+		<link rel="canonical" href=".">
+		<link rel="alternate" href="." hreflang="de">
+		<link rel="shortcut icon" href="https://www.seoset.de/favicon.ico" type="image/x-icon">	
+
+        <!-- CSS -->
+        <link rel='stylesheet' href='css/style.css'>
+        <link rel='stylesheet' href='menu/css/menu.css'>
+
+    </head>
+<body>
+
+        <main>
+
+            <!-- Menü nav: grid-template-columns: 10px 1fr 75px 75px 75px 1fr 10px; -->
+                <nav>
+                    <ul id="menu">
+                        <li id="homeName" class="teamName">Mannschaftsname Heimmannschaft</li>
+                        <li id="homeLogo" class="logo"><img src="img/logo-dummy.svg" alt="Vereinslogo Heimmannschaft"></li>  
+                        <li id="edit" class="pointer"><img src="img/111210-interface-and-web_menu-button-of-three-horizontal-lines.svg" alt="Menü öffnen und schließen"></li>
+                        <li id="guestLogo" class="logo"><img src="img/logo-dummy.svg" alt="Vereinslogo Gastmannschaft"></li>  
+                        <li id="guestName" class="teamName">Mannschaftsname Gastmannschaft</li>
+                    </ul>
+                    <ul id="editMenu">
+                        <li><button id="btnEditPlayerHome"><img src="img/850897-soccer_021-team.svg" alt="Spielernamen der Heimmannschaft ändern"></button></li>
+                        <li><button id="btnEditTeamHome"><img src="img/110924-football_inflatable-cheerer.svg" alt="Mannschaftsname der Heimmannschaft ändern"></button></li>
+                        <li><button id="btnEditLogoHome"><img src="img/111161-play-football_soccer-ball-on-a-shield.svg" alt="Vereinslogo der Heimmannschaft ändern"></button></li>
+                        <li></li>
+                        <li><button id="btnEditLogoGuest"><img src="img/111161-play-football_soccer-ball-on-a-shield.svg" alt="Vereinslogo der Gastmannschaft ändern"></button></li>
+                        <li><button id="btnEditTeamGuest"><img src="img/110924-football_inflatable-cheerer.svg" alt="Mannschaftsname der Gastmannschaft ändern"></button></li>
+                        <li><button id="btnEditPlayerGuest"><img src="img/850897-soccer_021-team.svg" alt="Spielernamen der Gastmannschaft ändern"></button></li>
+                    </ul>  
+                </nav>
+
+            <!-- Feld und Spieler -->
+
+                <div id="field">
+                    <img sizes="100%" srcset="img/fussballfeld-ls-400.jpg 400w, 
+                        img/fussballfeld-ls-800.jpg 800w,
+                        img/fussballfeld-ls.jpg 1200w",
+                        src="img/fussballfeld-ls-400.jpg" class="landscape" alt="Fussballfeld"/>
+                    <img sizes="100%" srcset="img/fussballfeld-pt-400.jpg 400w, 
+                        img/fussballfeld-pt-800.jpg 800w,
+                        img/fussballfeld-pt.jpg 1200w",
+                        src="img/fussballfeld-pt-400.jpg" class="portrait" alt="Fussballfeld"/>
+                    <!-- Aufstellung Heim Mannschaft-->
+                    <div id="homeTactics"></div>
+                    <!-- Aufstellung Gast Mannschaft-->
+                    <div id="guestTactics"></div>        
+                </div>
+           
+        </main>    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>        
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src='js/jquery.ui.touch-punch.min.js'></script>
+    <script src='js/js.js'></script>
+
+</body>
+</html>
+
